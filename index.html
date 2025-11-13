@@ -1,66 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>University of Alasema</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <img src="assets/logo.png" alt="University Logo" class="logo" />
-      <h1>UNIVERSITY OF ALASEMA</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#faculties">Faculties</a>
-        <a href="#library">E-Library</a>
-        <a href="#contact">Contact</a>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <img src="assets/logo.png" alt="logo">
+        <h1>UNIVERSITY OF ALASEMA</h1>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">نبذة عن الجامعة</a>
+        <a href="departments.html">الأقسام العلمية</a>
+        <a href="materials.html">المكتبة الإلكترونية</a>
+        <a href="contact.html">تواصل معنا</a>
       </nav>
+
+      <button id="hamburgerBtn" class="hamburger" aria-label="menu">☰</button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Welcome to University of Alasema</h2>
-      <p>A modern educational environment for innovation and excellence.</p>
+  <!-- side panel -->
+  <aside id="sidePanel" class="sidepanel" aria-hidden="true">
+    <h3>القائمة</h3>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">نبذة عن الجامعة</a>
+    <a href="departments.html">الأقسام العلمية</a>
+    <a href="materials.html">المكتبة الإلكترونية</a>
+    <a href="contact.html">تواصل معنا</a>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="inner">
+          <div class="hero-text">
+            <h2>مرحبا بكم في University of Alasema</h2>
+            <p>بيئة تعليمية عصرية للابتكار والتميز.</p>
+            <a href="about.html" class="btn" style="margin-top:12px;background:var(--gold);color:#06233a">اقرأ المزيد</a>
+          </div>
+          <div style="min-width:280px">
+            <div class="card">
+              <h3>خدمات إلكترونية</h3>
+              <p>نظام مذكرات، تسجيل وخدمات طلابية إلكترونية.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h2>آخر الأخبار والإعلانات</h2>
+            <div class="card-row">
+              <div class="card"><h3>بداية التسجيل للفصل القادم</h3><p>تفاصيل عن التسجيل ومواعيده.</p></div>
+              <div class="card"><h3>ورشة عمل لطلاب إدارة الأعمال</h3><p>محاور الورشة وتاريخها.</p></div>
+            </div>
+          </div>
+          <aside>
+            <div class="card">
+              <h3>المذكرات والدراسات</h3>
+              <div id="memosList"><p style="color:#666">جارٍ التحميل...</p></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>© 2025 University of Alasema – All Rights Reserved</div>
+      <div>Developed by <strong style="color:var(--gold)">Mo.Alzintany</strong></div>
     </div>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About the University</h2>
-    <p>
-      University of Alasema aims to provide high-quality education in various fields,
-      combining academic excellence with practical experience.
-    </p>
-  </section>
-
-  <section id="faculties" class="section">
-    <h2>Faculties</h2>
-    <ul>
-      <li>Faculty of Business Administration</li>
-      <li>Faculty of Information Technology</li>
-      <li>Faculty of Law</li>
-      <li>Faculty of Education</li>
-    </ul>
-  </section>
-
-  <section id="library" class="section">
-    <h2>E-Library & Materials</h2>
-    <p>Access study materials, notes, and university references here soon.</p>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Email: info@alasema.edu.ly</p>
-    <p>Location: Tripoli, Libya</p>
-  </section>
-
-  <footer>
-    <p>© 2025 University of Alasema – All Rights Reserved</p>
-    <p>Developed by <strong>Mo.Alzintany</strong></p>
   </footer>
 
   <script src="script.js"></script>
