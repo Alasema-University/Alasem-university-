@@ -1,21 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>University of Alasema</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
   <header class="header">
     <div class="wrap">
       <div class="brand">
-        <!-- تم تعديل الصورة لتظهر مباشرة من الرابط -->
-        <img src="https://i.postimg.cc/Dy6pRy2n/IMG-3032.png" alt="logo" style="max-width:120px; height:auto;">
+        <img src="https://i.postimg.cc/Dy6pRy2n/IMG-3032.png" alt="University Logo" class="logo">
         <h1>UNIVERSITY OF ALASEMA</h1>
       </div>
-
       <nav class="nav">
         <a href="index.html">الرئيسية</a>
         <a href="about.html">نبذة عن الجامعة</a>
@@ -23,12 +23,11 @@
         <a href="materials.html">المكتبة الإلكترونية</a>
         <a href="contact.html">تواصل معنا</a>
       </nav>
-
       <button id="hamburgerBtn" class="hamburger" aria-label="menu">☰</button>
     </div>
   </header>
 
-  <!-- side panel -->
+  <!-- Side Panel -->
   <aside id="sidePanel" class="sidepanel" aria-hidden="true">
     <h3>القائمة</h3>
     <a href="index.html">الرئيسية</a>
@@ -38,50 +37,70 @@
     <a href="contact.html">تواصل معنا</a>
   </aside>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="inner">
-          <div class="hero-text">
-            <h2>مرحبا بكم في University of Alasema</h2>
-            <p>بيئة تعليمية عصرية للابتكار والتميز.</p>
-            <a href="about.html" class="btn" style="margin-top:12px;background:var(--gold);color:#06233a">اقرأ المزيد</a>
-          </div>
-          <div style="min-width:280px">
-            <div class="card">
-              <h3>خدمات إلكترونية</h3>
-              <p>نظام مذكرات، تسجيل وخدمات طلابية إلكترونية.</p>
-            </div>
-          </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h2>مرحبا بكم في University of Alasema</h2>
+        <p>بيئة تعليمية عصرية للابتكار والتميز.</p>
+        <a href="about.html" class="btn">اقرأ المزيد</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <h2>الخدمات الإلكترونية</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>نظام المذكرات</h3>
+          <p>تصفح ورفع المذكرات الدراسية بسهولة.</p>
+        </div>
+        <div class="card">
+          <h3>تسجيل الطلاب</h3>
+          <p>إجراءات التسجيل للفصول الدراسية إلكترونيًا.</p>
+        </div>
+        <div class="card">
+          <h3>الخدمات الأكاديمية</h3>
+          <p>الاستعلام عن الدرجات والنتائج والخطط الدراسية.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="grid">
-          <div>
-            <h2>آخر الأخبار والإعلانات</h2>
-            <div class="card-row">
-              <div class="card"><h3>بداية التسجيل للفصل القادم</h3><p>تفاصيل عن التسجيل ومواعيده.</p></div>
-              <div class="card"><h3>ورشة عمل لطلاب إدارة الأعمال</h3><p>محاور الورشة وتاريخها.</p></div>
-            </div>
-          </div>
-          <aside>
-            <div class="card">
-              <h3>المذكرات والدراسات</h3>
-              <div id="memosList"><p style="color:#666">جارٍ التحميل...</p></div>
-            </div>
-          </aside>
+  <!-- News Section -->
+  <section class="news">
+    <div class="container">
+      <h2>آخر الأخبار والإعلانات</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>بداية التسجيل للفصل القادم</h3>
+          <p>تفاصيل عن التسجيل ومواعيده.</p>
+        </div>
+        <div class="card">
+          <h3>ورشة عمل لطلاب إدارة الأعمال</h3>
+          <p>محاور الورشة وتاريخها.</p>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- Memos Section -->
+  <section class="memos">
+    <div class="container">
+      <h2>المذكرات والدراسات</h2>
+      <div class="card">
+        <div id="memosList"><p>جارٍ التحميل...</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="wrap">
       <div>© 2025 University of Alasema – All Rights Reserved</div>
-      <div>Developed by <strong style="color:var(--gold)">Mo.Alzintany</strong></div>
+      <div>Developed by <strong>Mo.Alzintany</strong></div>
     </div>
   </footer>
 
