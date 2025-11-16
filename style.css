@@ -60,6 +60,10 @@ body {
   background-color: #f0b429;
   color: #fff;
 }
+  body {
+  overflow-x: hidden;
+}
+
 
 /* Hero */
 .hero {
