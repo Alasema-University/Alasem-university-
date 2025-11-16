@@ -1,16 +1,19 @@
-/* Base Styles */
+/* Base */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+  background-color: #fff; /* خلفية بيضاء */
   color: #06233a;
 }
 
 /* Header */
 .header {
-  background-color: #06233a;
-  color: #fff;
+  background-color: #fff;
+  color: #06233a;
   padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header .brand {
   display: flex;
@@ -18,16 +21,13 @@ body {
   gap: 15px;
 }
 .header .brand .logo {
-  max-width: 120px;
+  max-width: 130px;
   height: auto;
 }
-.nav {
-  margin-top: 10px;
-}
 .nav a {
-  color: #fff;
+  margin-left: 15px;
   text-decoration: none;
-  margin-right: 15px;
+  color: #06233a;
   font-weight: 600;
 }
 .nav a:hover {
@@ -61,11 +61,19 @@ body {
   color: #fff;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  background: #c3cfe2;
+  background-color: #f9f9f9;
   text-align: center;
   padding: 80px 20px;
+}
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 .hero .btn {
   padding: 10px 20px;
@@ -74,8 +82,6 @@ body {
   text-decoration: none;
   font-weight: 600;
   border-radius: 5px;
-  display: inline-block;
-  margin-top: 15px;
 }
 .hero .btn:hover {
   background-color: #d19e20;
